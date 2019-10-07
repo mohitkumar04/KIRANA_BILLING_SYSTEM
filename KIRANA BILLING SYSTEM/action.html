@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>welcome again</title>
+<script type="text/javascript">
+function go()
+{
+var tempstring=parseInt(document.getElementById("hello").value);
+var i=1;
+var tbl=document.getElementById("mytable");
+ tbl.innerHTML=tbl.innerHTML+"<tr><th>S.no</th><th>PRODUCT ID</th><th>NAME OF PRODUCT</th><th>QUANTITY</th><th>COST OF PRODUCT</th><th>FINAL COST OF PRODUCT</th><th>     </th></tr>";
+	while(tempstring>0)  //or (i<=tempstring)
+	{
+	tbl.innerHTML=tbl.innerHTML+"<tr><td>"+i+"</td>"
+	+"<td><input type='text' placeholder='product id'></td>"+
+	"<td><input type='text' placeholder='product name'></td>"+"<td><input type='text' placeholder='quantity'></td>"+"<td><input type='text' placeholder='cost'></td>"+"<td><input type='text' placeholder='final'></td>"+"<td><input type='text' ></td>";
+	i++;
+	tempstring--;
+	}
+	tbl.innerHTML=tbl.innerHTML+"<font size='5'><input type='button' name='text'/ value='PRINT'></font>"
+}
+
+
+</script>
+</head>
+<body style="background-color:powderblue;"><form>
+No of product<input type="text" id="hello"/> 
+<input type="button" value="show" id="good" onclick="go()"/>
+<form>
+<table id="mytable" border="1">
+</table>
+</body>
+</html>

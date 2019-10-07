@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function go()
+{
+var tempstring=parseInt(document.getElementById("hello").value);
+
+var tbl=document.getElementById("mytable");
+ tbl.innerHTML=tbl.innerHTML+"<tr><th>S.no</th><th>Name</th><th>att</th></tr>";
+	while(tempstring>0)
+	{
+	tbl.innerHTML=tbl.innerHTML+"<tr><td><input type='number' /></td><td><input type='text' /></td><td><input 		type='radio' />Absent<input type='radio'  />Present</td></tr>";
+	tempstring--;
+	}
+}
+</script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("nrd-D6Tu_L3chLE-unsplash.jpg");
+ height:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: center;
+  
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 10;
+  margin: 100px;
+  max-width: 1000px;
+  padding: 20px;
+  background-color: white;
+  top:100;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.img1 { background-image: url("neonbrand-SvhXD3kPSTY-unsplash.jpg"); }
+
+
+</style>
+</head>
+<body>
+
+
+<div class="bg-img">
+  <form action="action.html" class="container" target="_blank">
+    <h1>KIRANA BILLING SYSTEM</h1>
+
+    <label for="email"><b>NAME</b></label>
+    <input type="text" placeholder="Enter NAME" name="email" required>
+
+    <label for="psw"><b>ADDRESS</b></label>
+    <input type="text" placeholder="Enter ADDRESS" name="psw" required>
+
+    <label for="pincode"><b>PINCODE</b></label>
+    <input type="text" placeholder="Enter PINCODE" name="pincode" required>
+
+    <label for="Phone"><b>PHONE</b></label>
+    <input type="text" placeholder="Enter PHONE" name="phone" required>
+
+    <label for="city"><b>CITY</b></label>
+    <input type="text" placeholder="Enter CITY" name="city" required>
+
+    <label for="State"><b>State</b></label>
+    <input type="text" placeholder="Enter State" name="state" required>
+
+    <label for="city"><b>DATE</b></label>
+    <input type="text" placeholder="Enter date" name="city" required>
+
+    <label for="SELLER NAME"><b>SELLER NAME</b></label>
+    <input type="text" placeholder="Enter Seller" name="city" required>
+
+    <label for="city"><b>MODE OF PAYMENT</b></label>
+    <input type="text" placeholder="Enter Mode" name="city" required>
+<label for="image"><b>SELECT IMAGE TO UPLOAD</b></label>
+<input type="file" name="fileToUpload" id="fileToUpload">
+    
+
+    <input type="submit" id="good" value="GO" class="btn"/>
+  </form>
+  
+</div>
+<div class="bg-img img1"></div>
+
+
+
+
+
+</body>
+</html>
